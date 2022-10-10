@@ -13,33 +13,14 @@
           <ion-title size="large">Home</ion-title>
         </ion-toolbar>
     </ion-header>
-    <ion-row>
-        <ion-col>
-          <ion-card>
-            <h1 orange>27</h1>
-            <p>A homolar</p>
-          </ion-card>
-        </ion-col>
+    <ion-card [routerLink]="['/product-detail']">
+        <img src="https://ionicframework.com/docs/demos/api/card/madison.jpg" />
+        <ion-header>
+            <ion-card-subtitle>Product</ion-card-subtitle>
+            <ion-card-title>TestProduct</ion-card-title>
+        </ion-header>
+        <!--<img-loader *ngIf="product.images" src="{{product.images[0].src}}" useImg></img-loader>
+        -->
+    </ion-card>
 
-        <ion-col>
-          <ion-card>
-            <h1 grey>10</h1>
-            <p>Encerradas</p>
-          </ion-card>
-        </ion-col>
-
-        <ion-col>
-          <ion-card>
-            <h1 green>41</h1>
-            <p>Em gozo</p>
-          </ion-card>
-        </ion-col>
-
-        <ion-col>
-          <ion-card>
-            <h1 green>18</h1>
-            <p>Homologadas</p>
-          </ion-card>
-        </ion-col>
-      </ion-row>
 </ion-content>
