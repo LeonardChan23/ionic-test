@@ -9,9 +9,11 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { HttpClientModule } from "@angular/common/http";
 
+// import { IonicRestService } from './ionic-rest.service';
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, HttpClientModule,IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, HttpClientModule,IonicModule.forRoot(), AppRoutingModule,/*IonicRestService*/],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

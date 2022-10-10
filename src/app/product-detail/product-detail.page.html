@@ -7,6 +7,28 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [condense] = "true">
+    <p>
+        Opening the payment webpage
+    </p>
+     <ion-button (click)="sendPostRequest()">click to pay</ion-button>
+<!--
+<form name="payFormCcard" method="post" action="
+https://test.paydollar.com/b2cDemo/eng/payment/payForm.jsp" target="_top">
+<input type="hidden" name="merchantId" value="88159266">
+<input type="hidden" name="amount" value="0.05" >
+<input type="hidden" name="orderRef" value="000000001001">
+<input type="hidden" name="currCode" value="344" >
+<input type="hidden" name="mpsMode" value="NIL" >
+<input type="hidden" name="successUrl"
+value="https://asiapaytest.flywheelsites.com/Success.html">
+<input type="hidden" name="failUrl" value="https://asiapaytest.flywheelsites.com/Fail.html">
+<input type="hidden" name="cancelUrl" value="https://asiapaytest.flywheelsites.com/Cancel.html">
+<input type="hidden" name="payType" value="N">
+<input type="hidden" name="lang" value="E">
+<input type="hidden" name="payMethod" value="ALL">
+<input type="submit" name="submit">
+</form>
+-->
 
 </ion-content>
